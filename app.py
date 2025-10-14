@@ -8,15 +8,12 @@ import sys
 from datetime import datetime
 
 def greet(name: str) -> str:
-    """Return a friendly greeting."""
     return f"Hello, {name}!"
 
 def add(a: float, b: float) -> float:
-    """Add two numbers."""
     return a + b
 
 def mul(a: float, b: float) -> float:
-    """Multiply two numbers."""
     return a * b
 
 def stats(numbers):
@@ -28,7 +25,6 @@ def stats(numbers):
     return (len(numbers), total, total / len(numbers))
 
 def timestamp() -> str:
-    """Current ISO timestamp."""
     return datetime.utcnow().isoformat(timespec="seconds") + "Z"
 
 def usage():
